@@ -10,7 +10,7 @@ import Image from "next/image";
 
 function Header() {
   return (
-    <header className="flex flex-col justify-between items-center sm:flex-row m-5 web-container">
+    <header className="flex flex-col justify-between items-center sm:flex-col-reverse m-5 web-container">
       <div className="flex flex-grow justify-evenly mt-1 max-w-sm">
         <HeaderItem Icon={HomeIcon} title={"HOME"} />
         <HeaderItem Icon={UserGroupIcon} title={"ABOUT"} />
