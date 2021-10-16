@@ -3,10 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 @layer base {
   body {
     @apply bg-[#F9FAFB] text-gray-500;
   }
+}
+
+html {
+  font-family: "PT Sans", sans-serif !important;
 }
 
 .web-container {
@@ -26,7 +33,6 @@
   }
   .section-container {
     padding: 40px 40px;
-    margin: 20px 0 !important;
   }
   .hero-content {
     width: 100% !important;
@@ -48,4 +54,14 @@
   min-height: 100px;
   margin: 10px;
   padding: 10px;
+}
+
+/* DETAILED SERVICE SECTION */
+.detailed-services-section {
+  padding: 0 100px;
+}
+
+.detailed-services-heading {
+  font-style: bold;
+  font-size: 3rem;
 }
