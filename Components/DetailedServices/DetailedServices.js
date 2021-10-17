@@ -7,10 +7,12 @@ export default function DetailedServices({
   service,
   description,
   serviceImage,
-  sectionBackground,
+  theme,
 }) {
+  const { sectionBackground, textColor } = theme;
   const { width, height } = dimension;
   const bg = `${sectionBackground} + detailed-services-section flex flex-col sm:flex-row`;
+  const headingStyle = `detailed-services-heading + ${textColor}`;
   return (
     <div className={bg}>
       <div className="flex flex-row items-center justify-center mb-5 lg:w-auto ">
@@ -30,8 +32,8 @@ export default function DetailedServices({
           width={width}
           height={height}
         />
-        <h1 className="detailed-services-heading">{service}</h1>
-        <p>{description}</p>
+        <h1 className={headingStyle}>{service}</h1>
+        <p className={textColor}>{description}</p>
       </div>
     </div>
   );

@@ -28,8 +28,11 @@ export default function Home() {
       <Hero />
       <Services />
       <DetailedServices
-        sectionBackground="bg-gray-100"
-        logo={"/Assets/Youtubefull.png"}
+        theme={{
+          sectionBackground: "bg-gray-100",
+          textColor: "text-black",
+        }}
+        logo={"/Assets/YouTubefull.png"}
         dimension={{
           width: "100",
           height: "70",
@@ -40,7 +43,10 @@ export default function Home() {
         serviceImage={"/Assets/videoEditing.jpeg"}
       />
       <DetailedServices
-        sectionBackground="bg-gray-700"
+        theme={{
+          sectionBackground: "bg-gray-700",
+          textColor: "text-white",
+        }}
         logo={"/Assets/spotifyfull.png"}
         dimension={{
           width: "120",
