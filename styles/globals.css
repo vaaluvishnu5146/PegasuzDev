@@ -23,7 +23,7 @@ html {
 }
 
 .section-container {
-  padding: 100px 100px;
+  padding: 50px 100px;
 }
 
 @media (max-width: 560px) {
@@ -32,7 +32,7 @@ html {
     margin: 20px 0 !important;
   }
   .section-container {
-    padding: 40px 40px;
+    padding: 20px 20px;
   }
   .hero-content {
     width: 100% !important;
@@ -58,10 +58,16 @@ html {
 
 /* DETAILED SERVICE SECTION */
 .detailed-services-section {
-  padding: 0 100px;
+  padding: 50px 100px;
 }
 
 .detailed-services-heading {
   font-style: bold;
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 560px) {
+  .detailed-services-section {
+    padding: 20px 20px;
+  }
 }

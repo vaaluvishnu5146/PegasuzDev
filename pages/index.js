@@ -27,7 +27,30 @@ export default function Home() {
       <Header />
       <Hero />
       <Services />
-      <DetailedServices />
+      <DetailedServices
+        sectionBackground="bg-gray-100"
+        logo={"/Assets/Youtubefull.png"}
+        dimension={{
+          width: "100",
+          height: "70",
+        }}
+        service={"YouTube Video Editing"}
+        description="Lorem ipsum dolor set amet, Lorem ipsum dolor set amet Lorem ipsum
+          dolor set amet Lorem ipsum dolor set amet Lorem ipsum dolor set amet"
+        serviceImage={"/Assets/videoEditing.jpeg"}
+      />
+      <DetailedServices
+        sectionBackground="bg-gray-700"
+        logo={"/Assets/spotifyfull.png"}
+        dimension={{
+          width: "120",
+          height: "40",
+        }}
+        service={"Spotify Album Art"}
+        description="Lorem ipsum dolor set amet, Lorem ipsum dolor set amet Lorem ipsum
+          dolor set amet Lorem ipsum dolor set amet Lorem ipsum dolor set amet"
+        serviceImage={"/Assets/spotifyBackdroplatest.png"}
+      />
     </div>
   );
 }
