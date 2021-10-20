@@ -11,20 +11,20 @@ export default function DetailedServices({
 }) {
   const { sectionBackground, textColor } = theme;
   const { width, height } = dimension;
-  const bg = `${sectionBackground} + detailed-services-section flex flex-col sm:flex-row`;
-  const headingStyle = `detailed-services-heading + ${textColor}`;
+  const bg = `${sectionBackground} flex flex-col p-10 sm:flex-row`;
+  const headingStyle = `detailed-services-heading ${textColor}`;
   return (
     <div className={bg}>
-      <div className="flex flex-row items-center justify-center mb-5 lg:w-auto ">
+      <div className="flex flex-row items-center justify-center group mb-5 hover:hidden lg:w-auto">
         <Image
-          className="rounded-md"
+          className="rounded-md group-hover:animate-pulse"
           src={serviceImage}
           alt="Vercel Logo"
           width="800"
           height="400"
         />
       </div>
-      <div className="contentlg:w-1/2 lg:p-5 xs:p-0 sm:p-0">
+      <div className="contentlg:w-1/2 lg:p-5 sm:mr-5">
         <Image
           className="rounded-md mb-10"
           src={logo}

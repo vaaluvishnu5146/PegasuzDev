@@ -27,36 +27,38 @@ export default function Home() {
       <Header />
       <Hero />
       <Services />
-      <DetailedServices
-        theme={{
-          sectionBackground: "bg-gray-100",
-          textColor: "text-black",
-        }}
-        logo={"/Assets/YouTubefull.png"}
-        dimension={{
-          width: "100",
-          height: "70",
-        }}
-        service={"YouTube Video Editing"}
-        description="Lorem ipsum dolor set amet, Lorem ipsum dolor set amet Lorem ipsum
+      <div>
+        <DetailedServices
+          theme={{
+            sectionBackground: "bg-gray-100",
+            textColor: "text-black",
+          }}
+          logo={"/Assets/YouTubefull.png"}
+          dimension={{
+            width: "100",
+            height: "70",
+          }}
+          service={"YouTube Video Editing"}
+          description="Lorem ipsum dolor set amet, Lorem ipsum dolor set amet Lorem ipsum
           dolor set amet Lorem ipsum dolor set amet Lorem ipsum dolor set amet"
-        serviceImage={"/Assets/videoEditing.jpeg"}
-      />
-      <DetailedServices
-        theme={{
-          sectionBackground: "bg-gray-700",
-          textColor: "text-white",
-        }}
-        logo={"/Assets/spotifyfull.png"}
-        dimension={{
-          width: "120",
-          height: "40",
-        }}
-        service={"Spotify Album Art"}
-        description="Lorem ipsum dolor set amet, Lorem ipsum dolor set amet Lorem ipsum
+          serviceImage={"/Assets/videoEditing.jpeg"}
+        />
+        <DetailedServices
+          theme={{
+            sectionBackground: "bg-gray-700",
+            textColor: "text-white",
+          }}
+          logo={"/Assets/spotifyfull.png"}
+          dimension={{
+            width: "120",
+            height: "40",
+          }}
+          service={"Spotify Album Art"}
+          description="Lorem ipsum dolor set amet, Lorem ipsum dolor set amet Lorem ipsum
           dolor set amet Lorem ipsum dolor set amet Lorem ipsum dolor set amet"
-        serviceImage={"/Assets/spotifyBackdroplatest.png"}
-      />
+          serviceImage={"/Assets/spotifyBackdroplatest.png"}
+        />
+      </div>
     </div>
   );
 }

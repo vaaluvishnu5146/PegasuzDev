@@ -1,16 +1,6 @@
-/* ./src/tailwind.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
-@layer base {
-  body {
-    @apply bg-[#F9FAFB] text-gray-500;
-  }
-}
 
 html {
   font-family: "PT Sans", sans-serif !important;
@@ -31,16 +21,13 @@ html {
     padding: 0 40px;
     margin: 20px 0 !important;
   }
-  .section-container {
-    padding: 20px 20px;
-  }
   .hero-content {
     width: 100% !important;
   }
 }
 
 .hero-content {
-  width: 50%;
+  /* width: 50%; */
 }
 
 /* SERVICE SECTION */
@@ -50,10 +37,19 @@ html {
 }
 
 .services-card {
-  width: 100px;
-  min-height: 100px;
+  width: 150px;
+  min-height: 180px;
   margin: 10px;
   padding: 10px;
+}
+
+.services-content {
+  max-width: 100%;
+}
+
+@media (max-width: 560px) {
+  .service-content {
+  }
 }
 
 /* DETAILED SERVICE SECTION */
