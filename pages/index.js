@@ -3,6 +3,8 @@ import Header from "../Components/Header/Header";
 import Hero from "../Components/Hero/Hero";
 import Services from "../Components/Services/Services";
 import Head from "next/head";
+import EnquiryForm from "../Components/FormEnquiry/EnquiryForm";
+import Footer from "../Components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -58,7 +60,24 @@ export default function Home() {
           dolor set amet Lorem ipsum dolor set amet Lorem ipsum dolor set amet"
           serviceImage={"/Assets/spotifyBackdroplatest.png"}
         />
+        <DetailedServices
+          theme={{
+            sectionBackground: "bg-gray-100",
+            textColor: "text-black",
+          }}
+          logo={"/Assets/spotifyfull.png"}
+          dimension={{
+            width: "120",
+            height: "40",
+          }}
+          service={"Branding & Logo Design"}
+          description="Lorem ipsum dolor set amet, Lorem ipsum dolor set amet Lorem ipsum
+          dolor set amet Lorem ipsum dolor set amet Lorem ipsum dolor set amet"
+          serviceImage={"/Assets/spotifyBackdroplatest.png"}
+        />
       </div>
+      <EnquiryForm theme={"bg-gray-100"} />
+      <Footer />
     </div>
   );
 }

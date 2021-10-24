@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <div className="h-auto p-10 flex flex-col-reverse items-center sm:flex-row sm:p-20">
-      <div className="hero-content max-w-s">
+      <div className="hero-content w-1/2">
         <h3 className="text-5xl leading-12 white-100 mb-2">
           Finally, a better solution for your business
         </h3>
-        <p className=" tracking-widest">
+        <p className="tracking-widest">
           Providing the better Digital Assets and Branding Ideas, and Automation
           for your business.
         </p>
